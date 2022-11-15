@@ -14,7 +14,10 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './modules/home/home.component';
-
+import { GenerarReporteComponent } from './modules/reportes/generar-reporte/generar-reporte.component';
+import { AgregarClienteComponent } from './modules/clientes/agregar-cliente/agregar-cliente.component';
+import { ReportesHomeComponent } from './modules/reportes/reportes-home/reportes-home.component';
+import { ClientesHomeComponent } from './modules/clientes/clientes-home/clientes-home.component';
 
 @NgModule({
   imports: [
@@ -32,7 +35,11 @@ import { HomeComponent } from './modules/home/home.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ReportesHomeComponent,
+    GenerarReporteComponent,
+    AgregarClienteComponent,
+    ClientesHomeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

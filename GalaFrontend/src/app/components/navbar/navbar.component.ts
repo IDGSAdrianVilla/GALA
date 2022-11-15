@@ -26,11 +26,13 @@ export class NavbarComponent implements OnInit {
     }
 
     for(var item = 0; item < this.listTitles.length; item++){
-        if(this.listTitles[item].path === titlee){
-            return this.listTitles[item].title;
-        }
+      for ( var sub = 0; sub < this.listTitles[item].subRoutes.length; sub++ ) {
+        if(this.listTitles[item].subRoutes[sub].path === titlee){
+          return this.listTitles[item].subRoutes[sub].title;
+      }
+      }
     }
-    return 'Dashboard';
+    return 'Inicio';
   }
 
 }
